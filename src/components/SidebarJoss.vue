@@ -22,15 +22,23 @@
       >
         <img src="../assets/logo_rukun.png" class="w-10 h-10" />
         <h1 v-if="isiSidebar" class="font-Poppins ml-5 text-xl">
-          <span class="font-semibold text-[#ca13c5]">WARGA</span
-          ><span class="font-semibold text-[#2b94f1]">RTRW</span>
+          <span class="font-semibold text-[#ca13c5]">SANTRI</span
+          ><span class="font-semibold text-[#2b94f1]">PESANTREN</span>
         </h1>
       </div>
       <div class="flex items-center cursor-pointer ml-3 mt-6">
-        <router-link to="/dashboard">
+        <router-link to="/dashboard/santri">
           <span class="material-icons text-[#e52bf1] w-12 h-12">dashboard</span>
           <span v-if="isiSidebar" class="text-blue-600 text-base"
-            >Dashboard</span
+            >Santri</span
+          ></router-link
+        >
+      </div>
+      <div class="flex items-center cursor-pointer ml-3 mt-6">
+        <router-link to="/dashboard/pesantren">
+          <span class="material-icons text-[#e52bf1] w-12 h-12">dashboard_customize</span>
+          <span v-if="isiSidebar" class="text-blue-600 text-base"
+            >Pesantren</span
           ></router-link
         >
       </div>
@@ -82,94 +90,59 @@ export default {
       isiSidebar: false,
       menus: [
         {
-          title: "Profile",
+          title: "Santri Profile",
           icon: "settings_accessibility",
           submenu: [
             {
-              name: "Profile RT/RW",
-              path: "/profile/input",
+              name: "Daftar Pengajuan",
+              path: "/santri/daftar",
             },
             {
-              name: "Isi Map Wilayah",
-              path: "/profile/input/polygon",
+              name: "Verifikasi Santri",
+              path: "/santri/verifikasi",
             },
             {
-              name: "Pendaftaran User",
-              path: "/profile/register/user",
+              name: "ALokasi Bantuan",
+              path: "/santri/alokasi",
             },
+            {
+              name: "Laporan Pertanggungjawaban",
+              path: "/santri/laporan",
+            },
+            {
+              name: "AI Document Upload Test",
+              path: "/santri/ocr-test",
+            }
           ],
           open: false,
         },
         {
-          title: "Warga",
-          path: "/warga",
-          icon: "group",
+          title: "Pesantren Profile",
+          path: "/pesantren",
+          icon: "mosque",
           submenu: [
             {
-              name: "Isi Blok/No. Baru",
-              path: "/warga/input/blok",
+              name: "Daftar Pengajuan",
+              path: "/pesantren/daftar",
             },
             {
-              name: "Daftar KK",
-              path: "/warga/daftar/kk",
+              name: "Verifikasi Pesantren",
+              path: "/pesantren/verifikasi",
             },
             {
-              name: "Isi Jenis Pekerjaan",
-              path: "/warga/input/pekerjaan",
+              name: "Alokasi Bantuan Pesantren",
+              path: "/pesantren/alokasi",
             },
             {
-              name: "Isi Status Warga",
-              path: "/warga/input/status",
+              name: "Laporan Pertanggungjawaban",
+              path: "/pesantren/laporan",
             },
             {
-              name: "Registrasi Jenis Warga",
-              path: "/warga/input/type",
+              name: "AI Document Upload Test",
+              path: "/santri/ocr-test",
             },
           ],
           open: false,
-        },
-        {
-          title: "Iuran Warga",
-          path: "/iuran",
-          icon: "wallet",
-          submenu: [
-            {
-              path: "/iuran/bayar/iuran",
-              name: "Bayar Iuran Warga",
-            },
-            {
-              name: "Tambah Jenis iuran",
-              path: "/iuran/input/jenis",
-            },
-            {
-              name: "Warga iuran",
-              path: "/iuran/warga/sudah",
-            },
-            {
-              name: "Warga Belum Iuran",
-              path: "/iuran/warga/belum",
-            },
-          ],
-          open: false,
-        },
-        {
-          title: "Arus Kas Umum",
-          path: "/anggaran",
-          icon: "account_balance",
-          submenu: [
-            {
-              name: "Pencatatan Kas",
-              path: "/anggaran/input/anggaran",
-            },
-            {
-              name: "Isi Jenis Pemasukan",
-              path: "/anggaran/input/jenis/anggaran/masuk",
-            },
-            {
-              name: "Isi Jenis Pengeluaran",
-              path: "/anggaran/input/jenis/anggaran/keluar",
-            },
-          ],
         },
       ],
     };

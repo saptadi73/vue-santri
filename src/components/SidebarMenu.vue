@@ -13,8 +13,8 @@
         <div class="flex items-center bg-gradient-to-r from-purple-200 to-white rounded-r-lg">
           <img src="../assets/logo_rukun.png" class="w-10 h-10 animate-spin" />
           <h1 id="title1" class="font-Poppins hidden ml-5 text-2xl" v-if="isiSideBar = true">
-            <span class="font-bold text-[#ca13c5]">RUKUN</span><span
-              class="font-semibold text-[#2b94f1]">TETANGGA</span>
+            <span class="font-bold text-[#ca13c5]">SANTRI</span><span
+              class="font-semibold text-[#2b94f1]">PESANTREN</span>
           </h1>
         </div>
         <div

@@ -19,7 +19,7 @@
                 class="h-6 w-6 outline-1 ml-1 outline-black rounded-full"
               />
               </div>
-              <div class="ml-2 text-slate-500 font-Roboto text-xs">Manajemen Keuangan Warga Lingkup RT/RW</div>
+              <div class="ml-2 text-slate-500 font-Roboto text-xs">Aplikasi Bantuan Santri dan Pesantren</div>
             </div>
               
             </a>
@@ -91,13 +91,13 @@
             >
             <a
               class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-              href="/dashboard"
-              >Dashboard</a
+              href="/dashboard/santri"
+              >Dashboard Santri</a
             >
             <a
               class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-              href="/laporan"
-              >Laporan</a
+              href="/dashboard/pesantren"
+              >Dashboard Pesantren</a
             >
           </div>
         </div>
